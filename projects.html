@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Tom Erick Makokha</title>
+  <link rel="stylesheet" href="portfoliocss.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Erick Makokha</h1>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h2>Projects</h2>
+    <div class="projects-wrap">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3>EduMap Africa</h3>
+        <p class="project-source">Independent EdTech project</p>
+
+        <div class="project-screenshot">Screenshot coming soon — replace this block with an &lt;img&gt; of the live map view</div>
+
+        <p>
+          A resource-mapping platform designed to showcase and track educational opportunities —
+          scholarships, tutoring programmes, school resources, and community learning initiatives —
+          across Africa, making it easier for learners and parents to discover what's available near them.
+        </p>
+
+        <h4>My Approach</h4>
+        <ul>
+          <li>Identified the core problem: education opportunities exist but are scattered across
+            flyers, social media, and word of mouth, with no central, searchable source.</li>
+          <li>Designed a simple data model for opportunities (location, type, eligibility, deadline)
+            and a front-end interface to browse and filter them.</li>
+          <li>Built the interface mobile-first, since most target users access the internet primarily
+            through phones.</li>
+        </ul>
+
+        <h4>Tools Used</h4>
+        <div class="project-tools">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Google Sheets (data source)</span>
+        </div>
+
+        <h4>Key Lessons Learned</h4>
+        <p>
+          Good data structure matters more than a polished UI in the early stage of a resource platform —
+          I spent more time getting the opportunity data model right than on visuals, and that made every
+          later feature easier to build. I also learned to design for low-bandwidth, mobile-first users
+          rather than assuming a desktop-first audience.
+        </p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <h3>EduChain for SDG4</h3>
+        <p class="project-source">Academic / hackathon concept project</p>
+
+        <div class="project-screenshot">Screenshot coming soon — replace this block with a diagram of the scholarship flow</div>
+
+        <p>
+          A blockchain-based concept solution to bring transparency and equity to scholarship
+          distribution, addressing SDG 4 (Quality Education) by making it possible to trace how
+          scholarship funds move from donor to recipient.
+        </p>
+
+        <h4>My Approach</h4>
+        <ul>
+          <li>Researched common failure points in scholarship distribution — funds not reaching
+            intended recipients, unclear eligibility criteria, and lack of donor visibility.</li>
+          <li>Mapped a simple flow where each stage of disbursement (donor → institution → student)
+            is recorded as a transparent, tamper-resistant transaction.</li>
+          <li>Prototyped the concept and data flow, focusing on the logic and trust model rather than
+            a full production blockchain deployment.</li>
+        </ul>
+
+        <h4>Tools Used</h4>
+        <div class="project-tools">
+          <span class="tag">Blockchain concepts</span>
+          <span class="tag">Process mapping</span>
+          <span class="tag">Google Workspace</span>
+        </div>
+
+        <h4>Key Lessons Learned</h4>
+        <p>
+          Technology alone doesn't solve a trust problem — the hardest part wasn't the blockchain logic,
+          it was designing a process that institutions and donors would actually adopt. This taught me to
+          start every EdTech idea from the human workflow first, then decide what technology actually
+          earns its place in that workflow.
+        </p>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <h3>SME &amp; NGO Data Analytics Dashboards</h3>
+        <p class="project-source">Applied data analytics practice project</p>
+
+        <div class="project-screenshot">Screenshot coming soon — replace this block with a dashboard export</div>
+
+        <p>
+          Two linked data analysis projects: a sales dashboard for a local retail shop, and a survey
+          analysis for an NGO's donor reporting — both aimed at helping small organisations make
+          decisions from data they already collect but rarely use.
+        </p>
+
+        <h4>My Approach</h4>
+        <ul>
+          <li>For the retail shop: consolidated two years of scattered sales records, cleaned the
+            data, and built a dashboard showing monthly revenue trends, top-selling products, and
+            slow-moving stock.</li>
+          <li>For the NGO: cleaned a 200+ response beneficiary survey export, analysed response
+            patterns by demographic group, and produced a one-page summary report for their donor
+            reporting deadline.</li>
+          <li>In both cases, prioritised clarity for a non-technical audience over analytical
+            complexity — the goal was decisions made, not just charts produced.</li>
+        </ul>
+
+        <h4>Tools Used</h4>
+        <div class="project-tools">
+          <span class="tag">Excel</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">Python (pandas, matplotlib)</span>
+          <span class="tag">Google Forms / Sheets</span>
+        </div>
+
+        <h4>Key Lessons Learned</h4>
+        <p>
+          Real-world data is messy — missing values, inconsistent naming, duplicate entries — and cleaning
+          it well is most of the work. I also learned that a dashboard only creates value if the person
+          reading it can act on it immediately, which pushed me to design for the decision-maker, not for
+          the dataset.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Tom Erick Makokha | All Rights Reserved</p>
+  </footer>
+  <script src="jsportfolio.js"></script>
+</body>
+</html>
